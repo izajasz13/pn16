@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/bg.png");
+    background-size: cover;
+}
+.score-box{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    font-family: monospace;
+    background-color: white;
+}
+.rabbit{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: auto;
+}
+.egg{
+    position: absolute;
+    height: auto;
+    width: 60px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pop-up{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    border-radius: 15px;
+}
+.pop-up.hide, .overlay.hide{
+    display: none;
+}
